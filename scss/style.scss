@@ -51,13 +51,14 @@ img {
 	max-width: 225px;
 }
 
-bento-grid__item--pfp {
-	max-width: 225px;
+.bento-grid__item--pfp {
+	max-width: 165px!important;
   }
   
-bento-grid__item--obj {
-	max-height: 85px;
+  .bento-grid__item--obj {
+	  max-height: 85px!important;
   }
+  
 
 .bento-grid {
 	display: grid;
