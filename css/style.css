@@ -37,10 +37,13 @@ img {
 
 .bento-grid__item--pfp {
   max-width: 165px!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
 }
 
 .bento-grid__item--obj {
     max-height: 85px!important;
+    max-width: 125px!important;
 }
 
 .bento-grid {
@@ -153,6 +156,6 @@ img {
 
 .attribution {
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.55rem;
   margin-top: 3rem;
 }
