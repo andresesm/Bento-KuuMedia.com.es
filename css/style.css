@@ -187,7 +187,7 @@ img {
   animation: fadeInUp 1.4s ease-out forwards;
 }
 
-/* Asegura que la galería ocupe el tamaño del grid */
+/* Asegura que la galería ocupe todo el tamaño del grid */
 .bento-grid__item.gallery-swiper {
   padding: 0 !important;
   margin: 0 !important;
@@ -196,26 +196,26 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Evita el desbordamiento */
+  overflow: hidden; /* Evita que las imágenes sobresalgan */
 }
 
-/* Hace que el swiper ocupe todo el espacio del grid */
+/* Hace que el swiper ocupe todo el espacio disponible */
 .swiper {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* Ajusta las imágenes para llenar el contenedor y hacer zoom si es necesario */
+/* Ajusta las imágenes dentro del swiper */
 .swiper-slide img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important; /* Asegura que las imágenes se cubran completamente */
-  object-position: center !important; /* Centra la imagen */
-  transform: scale(1.2); /* Hace un zoom en la imagen */
-  transition: transform 0.3s ease; /* Transición suave cuando se hace zoom */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir el área sin deformarse */
+  object-position: center; /* Mantiene la imagen centrada */
+  transform: scale(1.1); /* Aplica zoom si la imagen no llena el área */
+  transition: transform 0.3s ease; /* Transición suave */
 }
 
-/* Ajuste en el hover para que las imágenes se centren con zoom */
+/* Hace que las imágenes se ajusten bien en hover */
 .swiper-slide:hover img {
-  transform: scale(1.1); /* Menos zoom al pasar el mouse */
+  transform: scale(1.05); /* Ajusta el zoom al pasar el mouse */
 }

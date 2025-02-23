@@ -115,21 +115,24 @@ EM cursive//
       </div>
   </section>
 
-  <script>
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
+<script>
+const swiper = new Swiper('.mySwiper', {
   direction: 'horizontal', // Direccion
-  loop: true, // Rota infinito
+  loop: true, // Hace que la galería sea cíclica
   autoplay: {
-        delay: 3000,      // Cambia cada 3 segundos
-        disableOnInteraction: false
-      },
-      effect: "fade",     // Efecto de desvanecimiento
-      fadeEffect: {
-        crossFade: true
-      },
-);
-}
-  </script>
+    delay: 3000, // Tiempo entre cada slide (3 segundos)
+    disableOnInteraction: false, // Permite la reproducción automática incluso después de la interacción
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+
 </body>
 </html>
