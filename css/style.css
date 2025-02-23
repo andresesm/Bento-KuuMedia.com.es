@@ -32,7 +32,15 @@ body {
 }
 
 img {
-  max-width: 260px;
+  max-width: 225px;
+}
+
+imgpfp {
+  max-width: 225px;
+}
+
+imgobj {
+  max-height: 85px;
 }
 
 .bento-grid {
