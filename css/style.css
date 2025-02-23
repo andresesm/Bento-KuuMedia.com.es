@@ -183,6 +183,19 @@ img {
   }
 }
 
-.bento-grid__item {
-  animation: fadeInUp 0.8s ease-out forwards;
+* {
+  animation: fadeInUp 1.4s ease-out forwards;
+}
+
+.gallery-inside-grid {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-inside-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ajusta la imagen sin deformarla */
 }
