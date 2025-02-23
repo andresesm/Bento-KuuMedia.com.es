@@ -50,6 +50,15 @@ body {
 img {
 	max-width: 225px;
 }
+
+bento-grid__item--pfp {
+	max-width: 225px;
+  }
+  
+bento-grid__item--obj {
+	max-height: 85px;
+  }
+
 .bento-grid {
 	display: grid;
 	place-content: center;

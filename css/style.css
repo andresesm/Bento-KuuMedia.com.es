@@ -35,12 +35,12 @@ img {
   max-width: 225px;
 }
 
-pfp {
+bento-grid__item--pfp {
   max-width: 225px;
 }
 
-obj {
-  max-height: 85px;
+bento-grid__item--obj {
+    max-height: 85px;
 }
 
 .bento-grid {
