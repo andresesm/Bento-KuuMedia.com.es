@@ -187,21 +187,31 @@ img {
   animation: fadeInUp 1.4s ease-out forwards;
 }
 
+/* Estilo para que la galería se ajuste sin modificar la grid */
 .gallery-swiper {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden; /* Evita desbordamientos */
 }
 
+/* Swiper debe ocupar el 100% del contenedor sin cambiar su tamaño */
 .swiper {
   width: 100%;
   height: 100%;
 }
 
+/* Ajustar las imágenes dentro de cada slide */
 .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Asegura que las imágenes llenen el espacio sin deformarse */
+}
+
+/* Evita que Swiper agregue padding/margen extra */
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
 }
