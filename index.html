@@ -117,9 +117,16 @@ EM cursive//
   <script>
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  },
+  direction: 'horizontal', // Direccion
+  loop: true, // Rota infinito
+  autoplay: {
+        delay: 3000,      // Cambia cada 3 segundos
+        disableOnInteraction: false
+      },
+      effect: "fade",     // Efecto de desvanecimiento
+      fadeEffect: {
+        crossFade: true
+      },
 );
   </script>
 </body>
