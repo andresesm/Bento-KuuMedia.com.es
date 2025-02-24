@@ -32,7 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
         './assets/insidegallery/rzgallery(29).webp',
     ];
 
-    // Función para cargar las imágenes
+    let currentIndex = 0; // Variable para hacer el seguimiento de la imagen actual
+
+    // Función para cargar las imágenes en el contenedor
     function loadImages() {
         images.forEach((src, index) => {
             const img = document.createElement('img');
@@ -43,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Función para cambiar la imagen aleatoriamente
-    function changeImageRandomly() {
+    // Función para cambiar la imagen en orden
+    function changeImageInOrder() {
         const allImages = galleryContainer.querySelectorAll('img');
 
         // Eliminar la clase 'active' de todas las imágenes
@@ -52,16 +54,18 @@ document.addEventListener('DOMContentLoaded', function() {
             img.classList.remove('active');
         });
 
-        // Seleccionar una imagen aleatoria
-        const randomIndex = Math.floor(Math.random() * allImages.length);
-        const randomImage = allImages[randomIndex];
-        
-        // Agregar la clase 'active' a la imagen seleccionada
-        randomImage.classList.add('active');
+        // Hacer visible la imagen en el índice actual
+        const currentImage = allImages[currentIndex];
+        currentImage.classList.add('active');
+
+        // Avanzar al siguiente índice de la imagen, reiniciando si llega al final
+        currentIndex = (currentIndex + 1) % allImages.length;
     }
 
     // Inicializar
-    loadImages(); // Cargar las imágenes
-    changeImageRandomly(); // Mostrar imagen inicial aleatoria
-    setInterval(changeImageRandomly, 2000); // Cambiar la imagen cada 2 segundos
+    loadImages(); // Cargar las imágenes en el contenedor
+    changeImageInOrder(); // Mostrar la primera imagen
+
+    // Cambiar la imagen cada 2 segundos
+    setInterval(changeImageInOrder, 2000);
 });
