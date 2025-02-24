@@ -255,6 +255,7 @@ img {
 /* Cada imagen dentro de la galería */
 .gallery-images2 img {
   width: 300px; /* Tamaño estándar */
+  height: 300px;
   object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
 
