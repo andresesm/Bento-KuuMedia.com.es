@@ -43,21 +43,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Función para randomizar y cambiar la imagen activa
+    // Función para seleccionar una imagen aleatoria y agregarle la clase 'active'
     function changeImageRandomly() {
-        const allImages = galleryContainer.querySelectorAll('.gallery-image');
+        const allImages = galleryContainer.querySelectorAll('img');
         
-        // Ocultar todas las imágenes primero
+        // Ocultar todas las imágenes
         allImages.forEach(img => {
-            img.style.opacity = '0';
+            img.classList.remove('active');
         });
 
-        // Escoger una imagen aleatoria
+        // Seleccionar una imagen aleatoria
         const randomIndex = Math.floor(Math.random() * allImages.length);
         const randomImage = allImages[randomIndex];
         
         // Mostrar la imagen seleccionada
-        randomImage.style.opacity = '1';
+        randomImage.classList.add('active');
     }
 
     // Inicializar
