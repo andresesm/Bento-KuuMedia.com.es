@@ -7,10 +7,10 @@
             'box1 box2'
             'box5 box6'
             'box5 box6'
-            'box7 box8'
-            'box7 box8'
-            'box3 box4'
-            'box3 box4';
+            'box3 box8'
+            'box3 box8'
+            'box4'
+            'box4';
     }
 
 	.bento-grid__item:nth-child(3), .bento-grid__item:nth-child(4) {
@@ -62,7 +62,6 @@
         'box5'
         'box6'
         'box8'
-        'box7'
         'box1'
         'box4';
 	}

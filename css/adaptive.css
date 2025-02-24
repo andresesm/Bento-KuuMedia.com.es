@@ -2,7 +2,7 @@
   .container {
     padding: 20px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "box1 box2" "box1 box2" "box5 box6" "box5 box6" "box3 box8" "box3 box8" " box4" " box4";
+    grid-template-areas: "box1 box2" "box1 box2" "box5 box6" "box5 box6" "box3 box8" "box3 box8" "box7 box4" "box7 box4";
   }
   .bento-grid__item:nth-child(3), .bento-grid__item:nth-child(4) {
     display: grid;
@@ -39,7 +39,7 @@
   .container {
     padding: 0;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "box2" "box3" "box5" "box6" "box8" "box1" "box4"; /*box7fuera porque es la galeria*/
+    grid-template-areas: "box2" "box7" "box3" "box5" "box6" "box8" "box1" "box4"; /*la7fuera porque es la galeria*/
   }
 }
 @media (max-width: 760px) {
