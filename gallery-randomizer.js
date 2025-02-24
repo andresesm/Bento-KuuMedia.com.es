@@ -32,48 +32,34 @@ document.addEventListener('DOMContentLoaded', function() {
         './assets/insidegallery/rzgallery(29).webp',
     ];
 
-    let currentIndex = -1; // Para asegurar que empieza con un índice válido
-
-    // Crea las imágenes y las coloca en el contenedor
+    // Función para cargar las imágenes en el contenedor
     function loadImages() {
         images.forEach((src, index) => {
             const img = document.createElement('img');
             img.src = src;
             img.alt = `Image ${index + 1}`;
-            img.classList.add('inactive'); // Inicialmente no visible
             galleryContainer.appendChild(img);
         });
     }
 
-    // Randomiza las imágenes
+    // Función para randomizar y cambiar la imagen activa
     function changeImageRandomly() {
-        // Obtener todas las imágenes
         const allImages = galleryContainer.querySelectorAll('img');
         
-        // Asegurarnos de que la clase active se elimine de la imagen anterior
-        const currentActiveImage = allImages[currentIndex];
-        if (currentActiveImage) {
-            currentActiveImage.classList.remove('active');
-        }
+        // Ocultar todas las imágenes primero
+        allImages.forEach(img => {
+            img.style.opacity = '0';
+        });
 
-        // Escoge una imagen aleatoria distinta a la actual
-        let randomIndex;
-        do {
-            randomIndex = Math.floor(Math.random() * allImages.length);
-        } while (randomIndex === currentIndex); // Evitar mostrar la misma imagen
-
-        // Establecer el nuevo índice
-        currentIndex = randomIndex;
-
-        // Mostrar la nueva imagen aleatoria
-        const newActiveImage = allImages[currentIndex];
-        newActiveImage.classList.add('active');
+        // Escoger una imagen aleatoria
+        const randomIndex = Math.floor(Math.random() * allImages.length);
+        const randomImage = allImages[randomIndex];
+        
+        // Mostrar la imagen seleccionada
+        randomImage.style.opacity = '1';
     }
 
-    // Iniciar la galería
+    // Inicializar
     loadImages();
-    changeImageRandomly(); // Muestra la primera imagen aleatoria
-
-    // Cambiar la imagen cada 2 segundos
-    setInterval(changeImageRandomly, 2000); // Cambia cada 2 segundos
+    setInterval(changeImageRandomly, 2000); // Cambia la imagen cada 2 segundos
 });

@@ -210,21 +210,6 @@ img {
   position: relative;
 }
 
-/* Las imágenes en la galería */
-.gallery-images2 img {
-  position: absolute; /* Posiciona las imágenes una encima de la otra */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0; /* Comienza invisible */
-  transition: opacity 1s ease-in-out; /* Transición de desvanecimiento */
-}
-
-/* Mostrar solo la imagen activa */
-.gallery-images2 img.active {
-  opacity: 1; /* Muestra la imagen activa */
-}
-
 /* Animación de transición para el desvanecimiento */
 @keyframes fadeImages {
   0% { opacity: 0; }
@@ -232,9 +217,24 @@ img {
   100% { opacity: 0; }
 }
 
-/* Se aplica un fade cada vez que la imagen cambia */
+/* Las imágenes en la galería */
 .gallery-images2 {
-  position: relative; /* Necesario para que las imágenes se apilen */
-  width: 100%; /* Asegúrate que el contenedor tenga el tamaño adecuado */
-  height: 100%; /* También aseguramos que el contenedor tenga la altura correcta */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-images2 img {
+  position: absolute; /* Posiciona las imágenes una encima de la otra */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0; /* Comienza invisible */
+  transition: opacity 1s ease-in-out; /* Transición suave */
+}
+
+/* Mostrar solo la imagen activa */
+.gallery-images2 img.active {
+  opacity: 1; /* Muestra la imagen activa */
 }
