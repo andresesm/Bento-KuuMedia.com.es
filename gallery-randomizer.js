@@ -67,6 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadImages();
     changeImageRandomly(); // Muestra la primera imagen aleatoria
 
-    // Cambiar la imagen cada 4 segundos
-    setInterval(changeImageRandomly, 4000); // Cambia cada 4 segundos
+    // Cambiar la imagen cada 2 segundos
+    setInterval(changeImageRandomly, 2000); // Cambia cada 2 segundos
 });
