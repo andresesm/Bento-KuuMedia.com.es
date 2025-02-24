@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Función para seleccionar una imagen aleatoria y agregarle la clase 'active'
     function changeImageRandomly() {
         const allImages = galleryContainer.querySelectorAll('img');
-        
+
         // Ocultar todas las imágenes
         allImages.forEach(img => {
             img.classList.remove('active');
