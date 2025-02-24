@@ -187,7 +187,7 @@ img {
   animation: fadeInUp 1.4s ease-out forwards;
 }
 
-/* Limitar el tamaño máximo de la galería en altura */
+/* Para la galería */
 .bento-grid__item.gallery-box2 {
   display: flex;
   align-items: center;
@@ -195,56 +195,44 @@ img {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 226px; /* Limita la altura máxima de la galería */
-  border-radius: 15px; /* Redondea los bordes */
-  overflow: hidden; /* Asegura que las imágenes no sobresalgan */
+  height: 226px; /* Mantener la altura fija */
+  border-radius: 15px; /* Redondear los bordes */
+  overflow: hidden;
+  position: relative; /* Necesario para posicionar las imágenes */
 }
 
-/* La galería con las imágenes que se mueven automáticamente */
-.gallery-images2 {
+/* Estilo para las imágenes dentro de la galería */
+.gallery-inside-grid2 {
   display: flex;
   width: 100%;
   height: 100%;
-  animation: slideGallery2 116s infinite; /* Ajusté el tiempo para que pase por todas las 29 imágenes */
+  overflow: hidden;
+  position: relative;
 }
 
-/* Ajustar la animación para que no se quede en blanco */
-@keyframes slideGallery2 {
-  0% { transform: translateX(0); }
-  3.44% { transform: translateX(-100%); }
-  6.89% { transform: translateX(-200%); }
-  10.33% { transform: translateX(-300%); }
-  13.78% { transform: translateX(-400%); }
-  17.22% { transform: translateX(-500%); }
-  20.67% { transform: translateX(-600%); }
-  24.11% { transform: translateX(-700%); }
-  27.56% { transform: translateX(-800%); }
-  31% { transform: translateX(-900%); }
-  34.45% { transform: translateX(-1000%); }
-  37.89% { transform: translateX(-1100%); }
-  41.34% { transform: translateX(-1200%); }
-  44.78% { transform: translateX(-1300%); }
-  48.23% { transform: translateX(-1400%); }
-  51.67% { transform: translateX(-1500%); }
-  55.12% { transform: translateX(-1600%); }
-  58.56% { transform: translateX(-1700%); }
-  62% { transform: translateX(-1800%); }
-  65.45% { transform: translateX(-1900%); }
-  68.89% { transform: translateX(-2000%); }
-  72.34% { transform: translateX(-2100%); }
-  75.78% { transform: translateX(-2200%); }
-  79.23% { transform: translateX(-2300%); }
-  82.67% { transform: translateX(-2400%); }
-  86.11% { transform: translateX(-2500%); }
-  89.56% { transform: translateX(-2600%); }
-  93% { transform: translateX(-2700%); }
-  96.45% { transform: translateX(-2800%); }
-  100% { transform: translateX(0); }
+/* Las imágenes en la galería */
+.gallery-images2 img {
+  position: absolute; /* Posiciona las imágenes una encima de la otra */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0; /* Comienza invisible */
+  transition: opacity 1s ease-in-out; /* Transición de desvanecimiento */
 }
 
-/* Para ocultar la galería en pantallas pequeñas (tablet y móvil) */
-@media (max-width: 1024px) {
-  .gallery-box2 {
-    display: none; /* Oculta la galería en tabletas y teléfonos */
-  }
+/* Mostrar solo la imagen activa */
+.gallery-images2 img.active {
+  opacity: 1; /* Muestra la imagen activa */
+}
+
+/* Animación de transición para el desvanecimiento */
+@keyframes fadeImages {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Se aplica un fade cada vez que la imagen cambia */
+.gallery-images2 {
+  animation: fadeImages 10s infinite; /* Cambia la imagen cada 10 segundos */
 }
