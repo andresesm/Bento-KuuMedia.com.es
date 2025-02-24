@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         './assets/insidegallery/rzgallery(29).webp',
     ];
 
-    // Función para cargar las imágenes en el contenedor
+    // Función para cargar las imágenes
     function loadImages() {
         images.forEach((src, index) => {
             const img = document.createElement('img');
@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Función para seleccionar una imagen aleatoria y agregarle la clase 'active'
+    // Función para cambiar la imagen aleatoriamente
     function changeImageRandomly() {
         const allImages = galleryContainer.querySelectorAll('img');
 
-        // Ocultar todas las imágenes
+        // Eliminar la clase 'active' de todas las imágenes
         allImages.forEach(img => {
             img.classList.remove('active');
         });
@@ -56,12 +56,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const randomIndex = Math.floor(Math.random() * allImages.length);
         const randomImage = allImages[randomIndex];
         
-        // Mostrar la imagen seleccionada
+        // Agregar la clase 'active' a la imagen seleccionada
         randomImage.classList.add('active');
     }
 
     // Inicializar
-    loadImages();
+    loadImages(); // Cargar las imágenes
     changeImageRandomly(); // Mostrar imagen inicial aleatoria
-    setInterval(changeImageRandomly, 2000); // Cambia la imagen cada 2 segundos
+    setInterval(changeImageRandomly, 2000); // Cambiar la imagen cada 2 segundos
 });
