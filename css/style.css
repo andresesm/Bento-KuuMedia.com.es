@@ -205,7 +205,7 @@ img {
 .gallery-inside-grid2 {
   display: flex;
   width: 100%;
-  height: auto; /* hace que las imagenes tengan al maximo ancho ignorando el alto */
+  height: 100%; /* hace que las imagenes tengan al maximo ancho ignorando el alto */
   overflow: hidden;
   position: relative;
 }
