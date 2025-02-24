@@ -200,50 +200,31 @@ img {
   overflow: hidden; /* Asegura que las imágenes no sobresalgan */
 }
 
-/* Contenedor de la galería con desplazamiento automático */
+/* Contenedor de la galería */
 .gallery-container {
   width: 100%;
-  overflow: hidden; /* Evita que se vean imágenes fuera del contenedor */
+  overflow: hidden; /* Evita que se vean imágenes fuera del área */
   position: relative;
-  height: 300px; /* Tamaño estándar de las imágenes */
+  height: 300px; /* Tamaño estándar */
 }
 
 /* La galería con las imágenes que se mueven automáticamente */
 .gallery-images2 {
   display: flex;
-  width: 2000%; /* 20 imágenes al 100% cada una */
+  width: 4000%; /* Se duplica el ancho para el loop infinito */
   height: 300px;
-  animation: slideGallery2 80s linear infinite; /* Ajuste del tiempo para 20 imágenes */
+  animation: slideGallery2 120s linear infinite; /* Animación más lenta y fluida */
 }
 
 /* Cada imagen dentro de la galería */
 .gallery-images2 img {
   width: 5%; /* 100% dividido por 20 imágenes */
-  height: 300px; /* Tamaño estándar */
+  height: 300px;
   object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
 
 /* Animación para hacer que las imágenes se desplacen de forma continua */
 @keyframes slideGallery2 {
   0% { transform: translateX(0); }
-  5% { transform: translateX(-100%); }
-  10% { transform: translateX(-200%); }
-  15% { transform: translateX(-300%); }
-  20% { transform: translateX(-400%); }
-  25% { transform: translateX(-500%); }
-  30% { transform: translateX(-600%); }
-  35% { transform: translateX(-700%); }
-  40% { transform: translateX(-800%); }
-  45% { transform: translateX(-900%); }
-  50% { transform: translateX(-1000%); }
-  55% { transform: translateX(-1100%); }
-  60% { transform: translateX(-1200%); }
-  65% { transform: translateX(-1300%); }
-  70% { transform: translateX(-1400%); }
-  75% { transform: translateX(-1500%); }
-  80% { transform: translateX(-1600%); }
-  85% { transform: translateX(-1700%); }
-  90% { transform: translateX(-1800%); }
-  95% { transform: translateX(-1900%); }
-  100% { transform: translateX(0); }
+  100% { transform: translateX(-2000%); } /* Se mueve completamente antes de reiniciarse */
 }
