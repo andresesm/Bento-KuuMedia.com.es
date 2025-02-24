@@ -38,13 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const img = document.createElement('img');
             img.src = src;
             img.alt = `Image ${index + 1}`;
+            img.classList.add('gallery-image');
             galleryContainer.appendChild(img);
         });
     }
 
     // Función para randomizar y cambiar la imagen activa
     function changeImageRandomly() {
-        const allImages = galleryContainer.querySelectorAll('img');
+        const allImages = galleryContainer.querySelectorAll('.gallery-image');
         
         // Ocultar todas las imágenes primero
         allImages.forEach(img => {
@@ -61,5 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Inicializar
     loadImages();
+    changeImageRandomly(); // Mostrar imagen inicial aleatoria
     setInterval(changeImageRandomly, 2000); // Cambia la imagen cada 2 segundos
 });
