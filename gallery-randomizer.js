@@ -29,35 +29,44 @@ document.addEventListener('DOMContentLoaded', function() {
         './assets/insidegallery/rzgallery(26).webp',
         './assets/insidegallery/rzgallery(27).webp',
         './assets/insidegallery/rzgallery(28).webp',
-        './assets/insidegallery/rzgallery(29).webp'
+        './assets/insidegallery/rzgallery(29).webp',
     ];
 
-    // Añadir las imágenes al contenedor de la galería
-    images.forEach(imageSrc => {
-        const imgElement = document.createElement('img');
-        imgElement.src = imageSrc;
-        imgElement.alt = 'Image in grid';
-        galleryContainer.appendChild(imgElement);
-    });
-
-    // Función para cambiar la imagen aleatoriamente
     let currentIndex = 0;
-    const imageElements = galleryContainer.querySelectorAll('img');
-    
-    function changeImage() {
-        // Ocultar la imagen actual
-        imageElements[currentIndex].classList.remove('active');
-        
-        // Cambiar a una nueva imagen aleatoria
-        currentIndex = Math.floor(Math.random() * imageElements.length);
 
-        // Mostrar la nueva imagen
-        imageElements[currentIndex].classList.add('active');
+    // Crea las imágenes y las coloca en el contenedor
+    function loadImages() {
+        images.forEach((src, index) => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = `Image ${index + 1}`;
+            img.classList.add('inactive'); // Inicialmente no visible
+            galleryContainer.appendChild(img);
+        });
     }
 
-    // Inicializa la primera imagen
-    imageElements[currentIndex].classList.add('active');
-    
-    // Cambiar imagen cada 4 segundos
-    setInterval(changeImage, 4000);
+    // Randomiza las imágenes
+    function changeImageRandomly() {
+        // Primero, ocultar la imagen activa
+        const allImages = galleryContainer.querySelectorAll('img');
+        const activeImage = allImages[currentIndex];
+        activeImage.classList.remove('active');
+        activeImage.classList.add('inactive');
+
+        // Escoge una imagen aleatoria
+        const randomIndex = Math.floor(Math.random() * allImages.length);
+        currentIndex = randomIndex;
+
+        // Muestra la nueva imagen aleatoria
+        const newActiveImage = allImages[currentIndex];
+        newActiveImage.classList.remove('inactive');
+        newActiveImage.classList.add('active');
+    }
+
+    // Iniciar la galería
+    loadImages();
+    changeImageRandomly(); // Muestra la primera imagen aleatoria
+
+    // Cambiar la imagen cada 4 segundos
+    setInterval(changeImageRandomly, 4000); // Cambia cada 4 segundos
 });

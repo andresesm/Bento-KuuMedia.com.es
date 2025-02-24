@@ -238,10 +238,3 @@ img {
   width: 100%; /* Asegúrate que el contenedor tenga el tamaño adecuado */
   height: 100%; /* También aseguramos que el contenedor tenga la altura correcta */
 }
-
-/* Restringir la visibilidad en pantallas pequeñas */
-@media (max-width: 768px) {
-  .gallery-images2 {
-    display: none; /* Ocultar la galería en pantallas pequeñas */
-  }
-}
