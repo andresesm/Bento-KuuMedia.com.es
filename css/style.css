@@ -250,7 +250,8 @@ img {
 .gallery-images2 {
   display: flex;
   width: calc(20 * 300px * 2); /* Ajusta el tamaño basado en 20 imágenes duplicadas */
-  animation: slideGallery2 60s linear infinite; /* Movimiento más lento y sin cortes */
+  /*animation: slideGallery2 60s linear infinite; /* Movimiento más lento y sin cortes */
+  animation: none !important;
 }
 
 /* Cada imagen dentro de la galería */
