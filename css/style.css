@@ -57,14 +57,28 @@ img {
 .svg-container2 {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
-  align-items: center;    /* Centra verticalmente */
   margin-top: 1rem;
   margin-bottom: 1rem;  
+}
+
+.svg-container3 {
+  display: flex;
+  justify-content: left; 
+}
+
+.svg-container4 {
+  display: flex;
+  justify-content: left; 
 }
 
 .svg-center {
   width: 50px;
   height: 50px;
+}
+
+.svg-center2 {
+  width: 75px;
+  height: 75px;
 }
 
 
