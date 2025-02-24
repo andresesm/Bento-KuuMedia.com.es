@@ -241,10 +241,3 @@ img {
   96.45% { transform: translateX(-2800%); }
   100% { transform: translateX(0); }
 }
-
-/* Para ocultar la galería en pantallas pequeñas (tablet y móvil) */
-@media (max-width: 1024px) {
-  .gallery-box2 {
-    display: none; /* Oculta la galería en tabletas y teléfonos */
-  }
-}
