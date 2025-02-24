@@ -235,7 +235,7 @@ img {
   height: 226px; /* Limita la altura máxima de la galería */
   border-radius: 15px; /* Redondea los bordes */
   overflow: hidden; /* Asegura que las imágenes no sobresalgan */
-  cursor: pointer; /* Cambia el cursor a una mano indicando que es clickeable */
+  /*cursor: pointer;  Cambia el cursor a una mano indicando que es clickeable */
 }
 
 /* Contenedor de la galería */
