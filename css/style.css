@@ -205,7 +205,7 @@ img {
 .gallery-inside-grid2 {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto; /* hace que las imagenes tengan al maximo ancho ignorando el alto */
   overflow: hidden;
   position: relative;
 }
@@ -234,5 +234,5 @@ img {
 
 /* Se aplica un fade cada vez que la imagen cambia */
 .gallery-images2 {
-  animation: fadeImages 10s infinite; /* Cambia la imagen cada 10 segundos */
+  animation: fadeImages 2s infinite; /* Cambia la imagen cada 2 segundos */
 }
