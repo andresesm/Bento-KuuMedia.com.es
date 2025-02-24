@@ -203,22 +203,21 @@ img {
 /* Contenedor de la galería */
 .gallery-container {
   width: 100%;
-  overflow: hidden; /* Evita que se vean imágenes fuera del área */
+  height: 300px; /* Altura fija */
+  overflow: hidden; /* Oculta imágenes fuera del contenedor */
   position: relative;
-  height: 300px; /* Tamaño estándar */
 }
 
 /* La galería con las imágenes que se mueven automáticamente */
 .gallery-images2 {
   display: flex;
-  width: 4000%; /* Se duplica el ancho para el loop infinito */
-  height: 300px;
-  animation: slideGallery2 120s linear infinite; /* Animación más lenta y fluida */
+  width: calc(20 * 300px * 2); /* Ajusta el tamaño basado en 20 imágenes duplicadas */
+  animation: slideGallery2 60s linear infinite; /* Movimiento más lento y sin cortes */
 }
 
 /* Cada imagen dentro de la galería */
 .gallery-images2 img {
-  width: 5%; /* 100% dividido por 20 imágenes */
+  width: 300px; /* Tamaño estándar */
   height: 300px;
   object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
@@ -226,5 +225,5 @@ img {
 /* Animación para hacer que las imágenes se desplacen de forma continua */
 @keyframes slideGallery2 {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-2000%); } /* Se mueve completamente antes de reiniciarse */
+  100% { transform: translateX(calc(-20 * 300px)); } /* Se mueve solo el tamaño de 20 imágenes */
 }
