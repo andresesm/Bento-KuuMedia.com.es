@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         './assets/insidegallery/rzgallery(29).webp',
     ];
 
-    let currentIndex = 0;
+    let currentIndex = -1; // Para asegurar que empieza con un índice válido
 
     // Crea las imágenes y las coloca en el contenedor
     function loadImages() {
@@ -47,19 +47,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Randomiza las imágenes
     function changeImageRandomly() {
-        // Primero, ocultar la imagen activa
+        // Obtener todas las imágenes
         const allImages = galleryContainer.querySelectorAll('img');
-        const activeImage = allImages[currentIndex];
-        activeImage.classList.remove('active');
-        activeImage.classList.add('inactive');
+        
+        // Asegurarnos de que la clase active se elimine de la imagen anterior
+        const currentActiveImage = allImages[currentIndex];
+        if (currentActiveImage) {
+            currentActiveImage.classList.remove('active');
+        }
 
-        // Escoge una imagen aleatoria
-        const randomIndex = Math.floor(Math.random() * allImages.length);
+        // Escoge una imagen aleatoria distinta a la actual
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * allImages.length);
+        } while (randomIndex === currentIndex); // Evitar mostrar la misma imagen
+
+        // Establecer el nuevo índice
         currentIndex = randomIndex;
 
-        // Muestra la nueva imagen aleatoria
+        // Mostrar la nueva imagen aleatoria
         const newActiveImage = allImages[currentIndex];
-        newActiveImage.classList.remove('inactive');
         newActiveImage.classList.add('active');
     }
 
