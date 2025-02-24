@@ -29,29 +29,35 @@ document.addEventListener('DOMContentLoaded', function() {
         './assets/insidegallery/rzgallery(26).webp',
         './assets/insidegallery/rzgallery(27).webp',
         './assets/insidegallery/rzgallery(28).webp',
-        './assets/insidegallery/rzgallery(29).webp',
+        './assets/insidegallery/rzgallery(29).webp'
     ];
 
-    // Función para mezclar las imágenes
-    function shuffleImages(arr) {
-        for (let i = arr.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [arr[i], arr[j]] = [arr[j], arr[i]]; // Intercambia los elementos
-        }
-        return arr;
+    // Añadir las imágenes al contenedor de la galería
+    images.forEach(imageSrc => {
+        const imgElement = document.createElement('img');
+        imgElement.src = imageSrc;
+        imgElement.alt = 'Image in grid';
+        galleryContainer.appendChild(imgElement);
+    });
+
+    // Función para cambiar la imagen aleatoriamente
+    let currentIndex = 0;
+    const imageElements = galleryContainer.querySelectorAll('img');
+    
+    function changeImage() {
+        // Ocultar la imagen actual
+        imageElements[currentIndex].classList.remove('active');
+        
+        // Cambiar a una nueva imagen aleatoria
+        currentIndex = Math.floor(Math.random() * imageElements.length);
+
+        // Mostrar la nueva imagen
+        imageElements[currentIndex].classList.add('active');
     }
 
-    // Aleatorizar las imágenes
-    const shuffledImages = shuffleImages(images);
-
-    // Crear y agregar las imágenes al contenedor
-    shuffledImages.forEach(src => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = 'Randomized image';
-        img.style.width = '100%';
-        img.style.height = '100%';
-        img.style.objectFit = 'cover';
-        galleryContainer.appendChild(img);
-    });
+    // Inicializa la primera imagen
+    imageElements[currentIndex].classList.add('active');
+    
+    // Cambiar imagen cada 4 segundos
+    setInterval(changeImage, 4000);
 });
