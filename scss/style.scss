@@ -5,19 +5,19 @@
     box-sizing: border-box;
 }
 :root{
-    --purple-100: hsl(254,88%,90%);
-    --purple-500: hsl(256,67%,59%);
-    --yellow-100: hsl(31,66%,93%);
-    --yellow-500: hsl(39,100%,71%);
-    --white: hsl(39,0%,100%);
-    --black: hsl(0,0%,7%);
+    --purple-100: hsl(254, 20%, 44%); /*hsl(254,88%,90%); /* contenido en linea */
+    --purple-500: hsl(255, 27%, 26%); /*hsl(256,67%,59%); /* kuu y otros proyectos*/
+    --yellow-100: hsl(254, 21%, 56%); /*hsl(31,66%,93%); /* andres*/
+    --yellow-500: hsl(251, 27%, 32%); /*hsl(39,100%,71%); /*contacto y tiktok*/
+    --white: hsl(0,0%,7%); /*fondo de diapo instagram?*/
+    --black: hsl(39,0%,100%); /* texto puede ser? */
 
 	--family: "DM Sans";
 	--fs: 18px;
 }
 
 body {
-	background-color: #f2f2f2;
+	background-color: #18122B; /*#f2f2f2; /* color de fondo */
     min-height: 100vh;
     font-family: "DM Sans";
     font-size: --fs;
