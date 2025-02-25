@@ -17,6 +17,7 @@
   --purple-500: hsl(255, 27%, 26%); /*hsl(256,67%,59%); /* kuu y otros proyectos*/
   --yellow-100: hsl(254, 21%, 56%); /*hsl(31,66%,93%); /* andres*/
   --yellow-500: hsl(251, 27%, 32%); /*hsl(39,100%,71%); /*contacto y tiktok esto es tambien el color del text accent*/
+  --yellow-350: hsl(39,100%,71%); /*text accent*/
   --white: hsl(0,0%,7%); /*fondo de diapo instagram?*/
   --black: hsl(39,0%,100%); /* texto puede ser? */
   --family: "DM Sans";
@@ -175,7 +176,7 @@ img {
   justify-content: space-around;
   align-items: start;
   padding: 30px;
-  background-color: var(--yellow-100;
+  background-color: var(--yellow-100);
 }
 .bento-grid__item:nth-child(8) {
   grid-area: box8;
@@ -189,7 +190,7 @@ img {
   align-self: center;
 }
 .bento-grid__item-emphasis {
-  color: var(--yellow-500);
+  color: var(--yellow-350);
 }
 
 .lg-text {
