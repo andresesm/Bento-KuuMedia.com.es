@@ -137,7 +137,7 @@ img {
   text-align: center;
 }
 .bento-grid__item:nth-child(2) span {
-  color: var(--yellow-500);
+  color: var(--yellow-350);
 }
 .bento-grid__item:nth-child(3) {
   grid-area: box3;
