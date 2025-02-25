@@ -268,7 +268,11 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .gallery-images2 {
-      animation: none!important;  /* Desactiva la animación para móviles*/
+  /*.gallery-images2 {
+      animation: none!important;  /* Desactiva la animación para móviles/
+  }*/
+
+  * {
+    animation: none !important; /* Desactiva la animación en móviles */
   }
 }
