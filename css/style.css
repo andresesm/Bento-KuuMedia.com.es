@@ -159,7 +159,7 @@ img {
 .bento-grid__item:nth-child(5) {
   grid-area: box5;
   justify-content: space-between;
-  background-color: var(--black);
+  background-color: var(--purple-100);
 }
 .bento-grid__item:nth-child(6) {
   grid-area: box6;
@@ -183,7 +183,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  color: var(--white);
+  color: var(--black);
   background-color: var(--purple-500);
 }
 .bento-grid__item:nth-child(8) h2 {
