@@ -101,6 +101,7 @@ img {
   padding: 15px;
   display: flex;
   flex-direction: column;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 .bento-grid__item:first-child {
   grid-area: box1;
