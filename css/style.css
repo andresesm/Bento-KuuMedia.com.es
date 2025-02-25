@@ -16,7 +16,7 @@
   --purple-100: hsl(254, 20%, 44%); /*hsl(254,88%,90%); /* contenido en linea */
   --purple-500: hsl(255, 27%, 26%); /*hsl(256,67%,59%); /* kuu y otros proyectos*/
   --yellow-100: hsl(254, 21%, 56%); /*hsl(31,66%,93%); /* andres*/
-  --yellow-500: hsl(251, 27%, 32%); /*hsl(39,100%,71%); /*contacto y tiktok*/
+  --yellow-500: hsl(251, 27%, 32%); /*hsl(39,100%,71%); /*contacto y tiktok esto es tambien el color del text accent*/
   --white: hsl(0,0%,7%); /*fondo de diapo instagram?*/
   --black: hsl(39,0%,100%); /* texto puede ser? */
   --family: "DM Sans";
@@ -34,6 +34,7 @@ body {
   font-family: "DM Sans";
   font-size: --fs;
   line-height: 1;
+  color: white; /* color del texto?*/
 }
 
 .container {
