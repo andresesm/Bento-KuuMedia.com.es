@@ -131,7 +131,7 @@ img {
   grid-area: box2;
   align-items: center;
   justify-content: space-evenly;
-  color: var(--white);
+  color: var(--black);
   background-color: var(--purple-500);
   text-align: center;
 }
@@ -158,7 +158,7 @@ img {
 .bento-grid__item:nth-child(5) {
   grid-area: box5;
   justify-content: space-between;
-  background-color: var(--white);
+  background-color: var(--black);
 }
 .bento-grid__item:nth-child(6) {
   grid-area: box6;
@@ -175,7 +175,7 @@ img {
   justify-content: space-around;
   align-items: start;
   padding: 30px;
-  background-color: var(--white);
+  background-color: var(--yellow-100;
 }
 .bento-grid__item:nth-child(8) {
   grid-area: box8;
