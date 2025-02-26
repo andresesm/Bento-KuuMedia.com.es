@@ -95,14 +95,25 @@ img {
   width: 35px;
   margin-top: 3rem;
   justify-content: left; 
-}
+} /* gmail */
 
 .svg-center4 {
   width: 35px;
   margin-top: 3rem;
   justify-content: left; 
-}
+} /* whatsapp */
 
+.svg-center5 {
+  width: 30px;
+  margin-top: 1.5rem;
+  justify-content: left; 
+} /* instagram */
+
+.svg-center6 {
+  width: 15px;
+  margin-top: 1.5rem;
+  justify-content: left; 
+} /* verificado */
 
 .bento-grid {
   display: grid;
