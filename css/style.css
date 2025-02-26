@@ -78,7 +78,8 @@ img {
 
 .svg-container3 {
   display: flex;
-  justify-content: left; 
+  justify-content: left;
+  gap: 4px; /*espacio entre iconos*/ 
 }
 
 .svg-center {
@@ -105,14 +106,14 @@ img {
 
 .svg-center5 {
   width: 30px;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   justify-content: left;
   display: inline-block; 
 } /* instagram */
 
 .svg-center6 {
   width: 15px;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   justify-content: left;
   display: inline-block; 
 } /* verificado */
