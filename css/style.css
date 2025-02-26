@@ -129,7 +129,7 @@ img {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.5); /* Sombra blanca con 50% de opacidad */
+  box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.25); /* Sombra blanca con 25% de opacidad */
   /*  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra negra */
 }
 .bento-grid__item:first-child {
