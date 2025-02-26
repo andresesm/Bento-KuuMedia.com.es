@@ -151,13 +151,19 @@ img {
   margin-top: 1rem;
   justify-content: left;
   display: inline-block; 
-} /* verificado */
+} /* verificado ig */
 
 .svg-center7 {
   width: 30px;
   justify-content: left;
   display: inline-block; 
 } /* tiktok */
+
+.svg-center8 {
+  width: 15px;
+  justify-content: left;
+  display: inline-block; 
+} /* verificado tiktok*/
 
 .bento-grid {
   display: grid;

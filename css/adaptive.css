@@ -41,6 +41,9 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "box2" "box7" "box3" "box5" "box6" "box8" "box1" "box4"; /*la7fuera porque es la galeria*/
   }
+  .bento-grid__item:nth-child(5), .bento-grid__item:nth-child(6), .bento-grid__item:nth-child(7), .bento-grid__item:first-child {
+    gap: 5px;
+  }
 }
 @media (max-width: 760px) {
   .bento-grid {
@@ -58,10 +61,5 @@
   }
   .bento-grid__item:nth-child(3) {
     padding-right: 15px;
-  }
-  .bento-grid__item:nth-child(5), .bento-grid__item:nth-child(6), .bento-grid__item:nth-child(7), .bento-grid__item:first-child {
-    align-items: center;
-    text-align: center;
-    gap: 5px!important;
   }
 }
