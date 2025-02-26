@@ -100,6 +100,11 @@ img {
 
 .svg-center4 {
   width: 35px;
+  justify-content: left; 
+} /* tiktok */
+
+.svg-center4 {
+  width: 35px;
   margin-top: 3rem;
   justify-content: left; 
 } /* whatsapp */
@@ -183,8 +188,8 @@ img {
   background-color: var(--yellow-500);
 }
 .bento-grid__item:nth-child(6) img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  /*border-top-left-radius: 15px;*/
+  /*border-top-right-radius: 15px;*/
 }
 .bento-grid__item:nth-child(7) {
   grid-area: box7;
