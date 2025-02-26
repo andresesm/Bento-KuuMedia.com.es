@@ -106,13 +106,15 @@ img {
 .svg-center5 {
   width: 30px;
   margin-top: 1.5rem;
-  justify-content: left; 
+  justify-content: left;
+  display: inline-block; 
 } /* instagram */
 
 .svg-center6 {
   width: 15px;
   margin-top: 1.5rem;
-  justify-content: left; 
+  justify-content: left;
+  display: inline-block; 
 } /* verificado */
 
 .bento-grid {
