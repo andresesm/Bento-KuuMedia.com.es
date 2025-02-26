@@ -109,7 +109,7 @@ img {
 .svg-container4 {
   display: flex;
   justify-content: left;
-  /*gap: 4px; espacio entre iconos*/ 
+  gap: 4px; /*espacio entre iconos*/ 
 }
 
 .svg-center {
@@ -214,13 +214,13 @@ img {
 }
 .bento-grid__item:nth-child(5) {
   grid-area: box5;
-  justify-content: center;
+  /*justify-content: center;*/
   background-color: var(--purple-100);
 }
 .bento-grid__item:nth-child(6) {
   grid-area: box6;
-  justify-content: center;
-  padding-bottom: 2rem;
+  /*justify-content: center;*/
+  padding-top: 2rem;
   background-color: var(--yellow-500);
 }
 .bento-grid__item:nth-child(6) img {
