@@ -359,24 +359,23 @@ a:active {
 }
 
 
-
-@media (max-width: 960px) {
+/*@media (max-width: 960px) {
   .gallery-images2 {
-    animation: none!important;  /* Desactiva la animación para móviles*/
+    animation: none!important;  /* Desactiva la animación para móviles
 }
 
 * {
-  animation: none!important; /* Desactiva la animación en móviles */
+  animation: none!important; /* Desactiva la animación en móviles
 }
-}
+}*/
 
 
-@media (max-width: 760px) {
+/*@media (max-width: 760px) {
   .gallery-images2 {
-    animation: none!important;  /* Desactiva la animación para móviles*/
+    animation: none!important;  /* Desactiva la animación para móviles
 }
 
 * {
-  animation: none!important; /* Desactiva la animación en móviles */
+  animation: none!important; /* Desactiva la animación en móviles 
 }
-}
+}*/
