@@ -166,8 +166,7 @@ img {
 } /* verificado tiktok*/
 
 .svg-center9 {
-  width: 115px;
-  justify-content: center;
+  width: 155px;
   display: inline-block; 
 } /*drive*/
 
@@ -217,7 +216,7 @@ img {
   background-color: var(--purple-100);
 }
 .bento-grid__item:nth-child(3) img {
-  justify-self: right;
+  justify-self: center;
 }
 .bento-grid__item:nth-child(4) {
   grid-area: box4;
