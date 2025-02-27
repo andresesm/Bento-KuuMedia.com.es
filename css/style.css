@@ -240,6 +240,7 @@ img {
   padding: 30px;
   background-color: var(--yellow-100);
 }
+
 .bento-grid__item:nth-child(8) {
   grid-area: box8;
   display: grid;
