@@ -70,9 +70,9 @@ a:active {
   max-width: 1280px;
 }
 
-img {
+/*img {
   max-width: 225px;
-}
+}*/
 
 .bento-grid__item--pfp {
   max-width: 165px!important;
@@ -173,7 +173,7 @@ img {
 } /*drive*/
 
 .svg-center10 {
-  width: 155px;
+  width: 255px;
 } /*otros*/
 
 .bento-grid {
@@ -181,6 +181,7 @@ img {
   place-content: center;
   max-width: 100%;
 }
+
 .bento-grid__item {
   position: relative;
   border-radius: 1rem;
@@ -236,8 +237,8 @@ img {
 }
 .bento-grid__item:nth-child(6) {
   grid-area: box6;
-  /*justify-content: center;*/
-  padding-top: 2rem;
+  justify-content: center;
+  /*padding-top: 2rem;*/
   background-color: var(--yellow-500);
 }
 .bento-grid__item:nth-child(6) img {
