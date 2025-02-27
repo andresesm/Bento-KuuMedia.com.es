@@ -44,6 +44,15 @@
   .bento-grid__item:nth-child(5), .bento-grid__item:nth-child(6), .bento-grid__item:nth-child(7), .bento-grid__item:first-child {
     gap: 5px;
   }
+
+  .gallery-images2 {
+    animation: none!important;  /* Desactiva la animación para móviles*/
+}
+
+* {
+  animation: none!important; /* Desactiva la animación en móviles */
+}
+
 }
 @media (max-width: 760px) {
   .bento-grid {
@@ -62,4 +71,12 @@
   .bento-grid__item:nth-child(3) {
     padding-right: 15px;
   }
+
+  .gallery-images2 {
+    animation: none!important;  /* Desactiva la animación para móviles*/
+}
+
+* {
+  animation: none!important; /* Desactiva la animación en móviles */
+}
 }

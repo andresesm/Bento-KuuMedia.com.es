@@ -344,13 +344,3 @@ img {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-20 * 300px)); } /* Se mueve solo el tamaño de 20 imágenes */
 }
-
-@media screen and (max-width: 768px) {
-  .gallery-images2 {
-      animation: none!important;  /* Desactiva la animación para móviles*/
-  }
-
-  * {
-    animation: none!important; /* Desactiva la animación en móviles */
-  }
-}
