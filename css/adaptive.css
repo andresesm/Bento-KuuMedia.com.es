@@ -53,9 +53,9 @@
   animation: none!important; /* Desactiva la animación en móviles */
 }
 
-.bento-grid__item:nth-child(7) {
+/*.bento-grid__item:nth-child(7) {
   display: none!important;
-}
+}*/
 
 }
 

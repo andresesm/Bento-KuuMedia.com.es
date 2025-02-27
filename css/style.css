@@ -281,7 +281,7 @@ img {
   font-size: 0.55rem;
 }
 
-@keyframes fadeInUp {
+/*@keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(30px);
@@ -294,7 +294,7 @@ img {
 
 * {
   animation: fadeInUp 1.4s ease-out forwards;
-}
+}*/
 
 .gallery-link {
   text-decoration: none; /* Quita subrayado */
