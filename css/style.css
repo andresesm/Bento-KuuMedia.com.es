@@ -103,13 +103,15 @@ img {
 .svg-container3 {
   display: flex;
   justify-content: left;
-  gap: 4px; /*espacio entre iconos*/ 
+  gap: 4px; /*espacio entre iconos*/
+  align-items: center; /* centra verticalmente*/ 
 }
 
 .svg-container4 {
   display: flex;
   justify-content: left;
-  gap: 4px; /*espacio entre iconos*/ 
+  gap: 4px; /*espacio entre iconos*/
+  align-items: center; /* centra verticalmente*/ 
 }
 
 .svg-center {
@@ -141,14 +143,14 @@ img {
 
 .svg-center5 {
   width: 30px;
-  margin-top: 1rem;
+  /*margin-top: 1rem;*/
   justify-content: left;
   display: inline-block; 
 } /* instagram */
 
 .svg-center6 {
   width: 15px;
-  margin-top: 1rem;
+  /*margin-top: 1rem;*/
   justify-content: left;
   display: inline-block; 
 } /* verificado ig */
