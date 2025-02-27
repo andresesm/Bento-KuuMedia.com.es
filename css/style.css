@@ -172,6 +172,10 @@ img {
   display: inline-block; 
 } /*drive*/
 
+.svg-center10 {
+  width: 155px;
+} /*otros*/
+
 .bento-grid {
   display: grid;
   place-content: center;
