@@ -5,59 +5,46 @@
 }
 
 :root {
-  /*--purple-100: hsl(254,88%,90%);
-  --purple-500: hsl(256,67%,59%);
-  --yellow-100: hsl(31,66%,93%);
-  --yellow-500: hsl(39,100%,71%);
-  --white: hsl(39,0%,100%);
-  --black: hsl(0,0%,7%);
-  --family: "DM Sans";
-  --fs: 18px;*/
-  --purple-100: hsl(254, 20%, 44%); /*hsl(254,88%,90%); /* contenido en linea */
-  --purple-500: hsl(255, 27%, 26%); /*hsl(256,67%,59%); /* kuu y otros proyectos*/
-  --yellow-100: hsl(254, 21%, 56%); /*hsl(31,66%,93%); /* andres*/
-  --yellow-500: hsl(251, 27%, 32%); /*hsl(39,100%,71%); /*contacto y tiktok esto es tambien el color del text accent*/
-  --yellow-350: hsl(39,100%,71%); /*text accent*/
-  --white: hsl(0,0%,7%); /*fondo de diapo instagram?*/
-  --black: hsl(39,0%,100%); /* texto puede ser? */
+  --purple-100: hsl(254, 20%, 44%);
+  --purple-500: hsl(255, 27%, 26%);
+  --yellow-100: hsl(254, 21%, 56%);
+  --yellow-500: hsl(251, 27%, 32%);
+  --yellow-350: hsl(39, 100%, 71%);
+  --white: hsl(0, 0%, 7%);
+  --black: hsl(39, 0%, 100%);
   --family: "DM Sans";
   --fs: 18px;
 }
 
 body {
-/*  background-color: #f2f2f2;
+  background-color: #18122b;
   min-height: 100vh;
-  font-family: "DM Sans";
-  font-size: --fs;
-  line-height: 1;*/
-  background-color: #18122B; /*#f2f2f2; /* color de fondo */
-  min-height: 100vh;
-  font-family: "DM Sans";
-  font-size: --fs;
+  font-family: "DM Sans", sans-serif;
+  font-size: var(--fs);
   line-height: 1;
-  color: white; /* color del texto?*/
+  color: white;
 }
 
 a:link {
-  color: #99E690; /* Contraste 12.13*/
+  color: #99e690;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #ffc0cb; /* Contraste 11.77*/
+  color: #ffc0cb;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffcb6b; /* Contraste 12.07*/
+  color: #ffcb6b;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: #FFD900; /* Contraste 13.08*/
+  color: #ffd900;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -70,48 +57,44 @@ a:active {
   max-width: 1280px;
 }
 
-/*img {
-  max-width: 225px;
-}*/
-
 .bento-grid__item--pfp {
-  max-width: 165px!important;
-  margin-left: auto!important;
-  margin-right: auto!important;
+  max-width: 165px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .bento-grid__item--obj {
-    max-height: 85px!important;
-    max-width: 125px!important;
+  max-height: 85px !important;
+  max-width: 125px !important;
 }
 
 .svg-container {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center;    /* Centra verticalmente */
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
-  margin-bottom: 1rem;  
+  margin-bottom: 1rem;
 }
 
 .svg-container2 {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: center;
   margin-top: 1rem;
-  margin-bottom: 1rem;  
+  margin-bottom: 1rem;
 }
 
 .svg-container3 {
   display: flex;
   justify-content: left;
-  gap: 4px; /*espacio entre iconos*/
-  align-items: center; /* centra verticalmente*/ 
+  gap: 4px;
+  align-items: center;
 }
 
 .svg-container4 {
   display: flex;
   justify-content: left;
-  gap: 4px; /*espacio entre iconos*/
-  align-items: center; /* centra verticalmente*/ 
+  gap: 4px;
+  align-items: center;
 }
 
 .svg-center {
@@ -127,59 +110,53 @@ a:active {
 .svg-center3 {
   width: 35px;
   margin-top: 3rem;
-  justify-content: left; 
-} /* gmail */
-
-.svg-center4 {
-  width: 35px;
-  justify-content: left; 
-} /* tiktok */
+  justify-content: left;
+}
 
 .svg-center4 {
   width: 35px;
   margin-top: 3rem;
-  justify-content: left; 
-} /* whatsapp */
+  justify-content: left;
+}
 
 .svg-center5 {
   width: 30px;
-  /*margin-top: 1rem;*/
   justify-content: left;
-  display: inline-block; 
-} /* instagram */
+  display: inline-block;
+}
 
 .svg-center6 {
   width: 15px;
-  /*margin-top: 1rem;*/
   justify-content: left;
-  display: inline-block; 
-} /* verificado ig */
+  display: inline-block;
+}
 
 .svg-center7 {
   width: 30px;
   justify-content: left;
-  display: inline-block; 
-} /* tiktok */
+  display: inline-block;
+}
 
 .svg-center8 {
   width: 15px;
   justify-content: left;
-  display: inline-block; 
-} /* verificado tiktok*/
+  display: inline-block;
+}
 
 .svg-center9 {
   width: 155px;
-  display: inline-block; 
-} /*drive*/
+  display: inline-block;
+}
 
 .svg-center10 {
   width: 255px;
-} /*otros*/
+}
 
 .bento-grid {
   display: grid;
   place-content: center;
   max-width: 100%;
+  padding-top: 48px;
 }
 
 .bento-grid__item {
@@ -189,19 +166,22 @@ a:active {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.15); /* Sombra blanca con 25% de opacidad */
-  /*  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra negra */
+  box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.15);
 }
+
 .bento-grid__item:first-child {
   grid-area: box1;
   justify-content: space-around;
 }
+
 .bento-grid__item:first-child img {
   margin-top: 1rem;
 }
+
 .bento-grid__item:first-child em {
   color: var(--purple-500);
 }
+
 .bento-grid__item:nth-child(2) {
   grid-area: box2;
   align-items: center;
@@ -210,41 +190,42 @@ a:active {
   background-color: var(--purple-500);
   text-align: center;
 }
+
 .bento-grid__item:nth-child(2) span {
   color: var(--yellow-350);
 }
+
 .bento-grid__item:nth-child(3) {
   grid-area: box3;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   flex-direction: column;
   align-content: space-evenly;
-  padding-right: 0;
   background-color: var(--purple-100);
 }
+
 .bento-grid__item:nth-child(3) img {
   justify-self: center;
 }
+
 .bento-grid__item:nth-child(4) {
   grid-area: box4;
   justify-content: space-evenly;
   background-color: var(--yellow-500);
 }
+
 .bento-grid__item:nth-child(5) {
   grid-area: box5;
   justify-content: center;
   background-color: var(--purple-100);
 }
+
 .bento-grid__item:nth-child(6) {
   grid-area: box6;
   justify-content: center;
-  /*padding-top: 2rem;*/
   background-color: var(--yellow-500);
 }
-.bento-grid__item:nth-child(6) img {
-  /*border-top-left-radius: 15px;*/
-  /*border-top-right-radius: 15px;*/
-}
+
 .bento-grid__item:nth-child(7) {
   grid-area: box7;
   justify-content: space-around;
@@ -261,9 +242,11 @@ a:active {
   color: var(--black);
   background-color: var(--purple-500);
 }
+
 .bento-grid__item:nth-child(8) h2 {
   align-self: center;
 }
+
 .bento-grid__item-emphasis {
   color: var(--yellow-350);
 }
@@ -293,29 +276,12 @@ a:active {
   font-size: 0.55rem;
 }
 
-/*@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-* {
-  animation: fadeInUp 1.4s ease-out forwards;
-}*/
-
 .gallery-link {
-  text-decoration: none; /* Quita subrayado */
-  color: inherit; /* Usa el color del texto del padre */
-  display: block; /* Asegura que ocupe todo el espacio */
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
-
-/* Limitar el tamaño máximo de la galería en altura */
 .bento-grid__item.gallery-box2 {
   display: flex;
   align-items: center;
@@ -323,59 +289,36 @@ a:active {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 226px; /* Limita la altura máxima de la galería */
-  border-radius: 15px; /* Redondea los bordes */
-  overflow: hidden; /* Asegura que las imágenes no sobresalgan */
-  cursor: pointer;  /*Cambia el cursor a una mano indicando que es clickeable */
+  height: 226px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-/* Contenedor de la galería */
 .gallery-container {
   width: 100%;
-  height: 300px; /* Altura fija */
-  overflow: hidden; /* Oculta imágenes fuera del contenedor */
+  height: 300px;
+  overflow: hidden;
   position: relative;
 }
 
-/* La galería con las imágenes que se mueven automáticamente */
 .gallery-images2 {
   display: flex;
-  width: calc(20 * 300px * 2); /* Ajusta el tamaño basado en 20 imágenes duplicadas */
-  animation: slideGallery2 60s linear infinite; /* Movimiento más lento y sin cortes */
-  /*animation: none !important;*/
+  width: calc(20 * 300px * 2);
+  animation: slideGallery2 60s linear infinite;
 }
 
-/* Cada imagen dentro de la galería */
 .gallery-images2 img {
-  width: 300px; /* Tamaño estándar */
+  width: 300px;
   height: 300px;
-  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  object-fit: cover;
 }
 
-/* Animación para hacer que las imágenes se desplacen de forma continua */
 @keyframes slideGallery2 {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-20 * 300px)); } /* Se mueve solo el tamaño de 20 imágenes */
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-20 * 300px));
+  }
 }
-
-
-/*@media (max-width: 960px) {
-  .gallery-images2 {
-    animation: none!important;  /* Desactiva la animación para móviles
-}
-
-* {
-  animation: none!important; /* Desactiva la animación en móviles
-}
-}*/
-
-
-/*@media (max-width: 760px) {
-  .gallery-images2 {
-    animation: none!important;  /* Desactiva la animación para móviles
-}
-
-* {
-  animation: none!important; /* Desactiva la animación en móviles 
-}
-}*/
