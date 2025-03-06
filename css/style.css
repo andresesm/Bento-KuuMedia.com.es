@@ -38,6 +38,12 @@ body {
   color: white; /* color del texto?*/
 }
 
+@media only screen and (min-device-width: 920px) {
+  body {
+      width: 1500px;
+  }
+}
+
 a:link {
   color: #99E690; /* Contraste 12.13*/
   background-color: transparent;
