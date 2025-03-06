@@ -172,6 +172,11 @@ a:active {
   display: inline-block; 
 } /*drive*/
 
+@media (max-width: 960px) {
+  .svg-center9 {
+    width: 100px;
+  } /*drive*/
+
 .svg-center10 {
   width: 255px;
 } /*otros*/
@@ -219,7 +224,7 @@ a:active {
   grid-template-columns: repeat(1, 1fr);
   flex-direction: column;
   align-content: space-evenly;
-  padding-right: 0;
+  padding-right: 15px;
   background-color: var(--purple-100);
 }
 .bento-grid__item:nth-child(3) img {
