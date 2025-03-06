@@ -55,7 +55,7 @@
 @media (max-width: 760px) {
   .bento-grid {
     zoom: 0.9;
-    padding: 15px;
+    padding: 36px 24px;
   }
   .bento-grid__item:nth-child(3), .bento-grid__item:nth-child(8), .bento-grid__item:nth-child(4) {
     grid-template-columns: repeat(1, 1fr);
