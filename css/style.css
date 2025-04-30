@@ -266,6 +266,7 @@ a:active {
   justify-content: space-between;
   color: var(--black);
   background-color: var(--purple-500);
+  align-items: center;
 }
 .bento-grid__item:nth-child(8) h2 {
   align-self: center;
